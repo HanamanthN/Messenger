@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class RegisterViewController: UIViewController {
     private let imageView: UIImageView = {
@@ -55,6 +56,7 @@ class RegisterViewController: UIViewController {
         passwordField.leftViewMode = .always
         passwordField.backgroundColor = .white
         passwordField.isSecureTextEntry = true
+        passwordField.textContentType = .oneTimeCode
         return passwordField
     }()
     
@@ -149,6 +151,15 @@ class RegisterViewController: UIViewController {
         }
         
         // Firebase Login
+        FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: { authResult, error in
+            guard let result = authResult, error == nil else {
+                print("error creating user")
+                return
+            }
+            
+            let user = result.user
+            print("Created user \(user)")
+        })
     }
     
     func alertUserLoginError() {
