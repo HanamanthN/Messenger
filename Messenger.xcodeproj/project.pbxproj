@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8989588926EF54E400B7C697 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8989588826EF54E400B7C697 /* DatabaseManager.swift */; };
 		89D73F9A26E8A2070097A8A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D73F9926E8A2070097A8A9 /* AppDelegate.swift */; };
 		89D73F9C26E8A2070097A8A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D73F9B26E8A2070097A8A9 /* SceneDelegate.swift */; };
 		89D73F9E26E8A2070097A8A9 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D73F9D26E8A2070097A8A9 /* ConversationsViewController.swift */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		2576136F199B0B3B8D338063 /* Pods_Messenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Messenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8989588826EF54E400B7C697 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		89D73F9626E8A2070097A8A9 /* Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D73F9926E8A2070097A8A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89D73F9B26E8A2070097A8A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				89D73F9926E8A2070097A8A9 /* AppDelegate.swift */,
 				89D73F9B26E8A2070097A8A9 /* SceneDelegate.swift */,
 				89D73FCB26E8BC1F0097A8A9 /* Extensions.swift */,
+				8989588826EF54E400B7C697 /* DatabaseManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89D73FB726E8A6FB0097A8A9 /* LoginViewController.swift in Sources */,
+				8989588926EF54E400B7C697 /* DatabaseManager.swift in Sources */,
 				89D73FBB26E8A7090097A8A9 /* RegisterViewController.swift in Sources */,
 				89D73FC426E8A77E0097A8A9 /* NewConversationViewController.swift in Sources */,
 				89D73F9E26E8A2070097A8A9 /* ConversationsViewController.swift in Sources */,
